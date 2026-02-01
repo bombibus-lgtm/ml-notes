@@ -110,6 +110,10 @@ When we do variational inference, we can't represent the true posterior, so we u
 
 
 
+take the log to remove the exp and also the log is increasing so we can max/min it and it goes in the right direction
+
+Gaussian decoder log-density
+<img width="446" height="67" alt="2026-02-01-202304_446x67_scrot" src="https://github.com/user-attachments/assets/65e09592-301c-48a7-999e-3d77e2ec7170" />
 
 
 
