@@ -63,3 +63,13 @@ we still train with teacher forcing but add **adversarial objective so the hidde
 
 The idea is to reduce the difference between inference and training
 
+## Types of attention
+1. Self attention in encoder
+2. Masked self attention in decoder
+3. Mixed attention : queries come from decoder, values from encoder, residual recombination with decoder features
+
+The attention blocks are stacked
+
+
+Recurrent model has intelligent forgetting -> compress the context into evolving state
+Attention model : store and index intelligently
