@@ -86,6 +86,18 @@ Final representation : we collapse all layers linearly and we train this layer f
   - Separates sentence a and b in pair inputs
   - often we marks the end of the sequence
 
+# BERTology
+
+cloze -> fill in the blank task
+
+BERT knows about syntax
+
+1. BERT representations are hierachical instead of linear
+2. embeddings encode info about parts of speech, syntactic chunks and roles
+3. takes subject-predicate agreement into account on the cloze task
+4. BERT struggles with negation
+5. BERTs syntactic knowledge is incomplete
+
 
 
 
