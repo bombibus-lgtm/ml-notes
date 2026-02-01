@@ -73,3 +73,20 @@ The attention blocks are stacked
 
 Recurrent model has intelligent forgetting -> compress the context into evolving state
 Attention model : store and index intelligently
+
+# ELMo : Embeddings from Language Models
+
+Left to right stacked LSTM : language model -> summarizes left context of each word
+Right to left stacked LSTM : reverse language model -> summarizes right context of each word
+Stacked LSTM layers, shared character embeddings and output embeddings
+Final representation : we collapse all layers linearly and we train this layer for a specific task
+
+- [CLS] classification token is put at the very start of the input sequence. After the model runs, the hidden state for [CLS] is treated as a single summary representation of the whole input and is commonly used for classification tasks
+- [SEP] separator token marks boundaries
+  - Separates sentence a and b in pair inputs
+  - often we marks the end of the sequence
+
+
+
+
+
