@@ -98,6 +98,18 @@ BERT knows about syntax
 4. BERT struggles with negation
 5. BERTs syntactic knowledge is incomplete
 
+# Evidence Lower bound
+
+The KL divergence is always positive. the KL divergence represent the gap between the true log evidence and the ELBO.
+
+Jensen's inequality shows that the bound is tight for q(z) = p_theta(z|x)
+
+when q(z) matches the **true** posterior p_theta(z|x) then the ELBO **equals** the exact log evidence log(p_theta(x))
+
+When we do variational inference, we can't represent the true posterior, so we use the restricted family q_phi(z | x)
+
+
+
 
 
 
